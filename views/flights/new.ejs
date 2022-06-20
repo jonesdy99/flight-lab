@@ -13,16 +13,16 @@
     </select>
     <label for="airport-select">Airport:</label>
     <select name="airport" id="airport-select">
-      <option value="AUS">AUS</option>
-      <option value="DFW">DFW</option>
       <option value="DEN">DEN</option>
+      <option value="DFW">DFW</option>
+      <option value="AUS">AUS</option>
       <option value="LAX">LAX</option>
       <option value="SAN">SAN</option>
     </select>
     <label for="flightNo">Flight Number:</label>
-    <input type="text" name="flightNo" id="flightNo">
+    <input type="number" name="flightNo" id="flightNo" required>
     <label for="departs">Depart Date:</label>
-    <input type="text" name="departs" id="departs">
+    <input type="date" name="departs" id="departs">
     <button type="submit">Add Flight</button>
   </form>
 </main>
