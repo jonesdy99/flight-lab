@@ -14,6 +14,7 @@ const flightSchema = new Schema({
   airport: {type: String, enum:['AUS','DFW','DEN','LAX','SAN']},
   flightNo: {type: Number, min: 10, max: 9999, required: true},
   tickets: [ticketSchema],
+  meals: [{type: Schema.Types.ObjectId, ref: 'Meal'}],    
   departs: {type: Date, default: function(){
     const today = new Date()
     const oneYear = today.getFullYear() + 1
